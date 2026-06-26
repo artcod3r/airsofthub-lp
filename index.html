@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirsoftHub - O App definitivo para Jogadores e Campos</title>
+    <style>
+        :root {
+            --bg-color: #12161a;
+            --card-bg: #1a2126;
+            --accent-color: #a3b899; /* Verde Oliva Tático */
+            --text-color: #ffffff;
+            --text-muted: #8a96a0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .badge {
+            background-color: rgba(163, 184, 153, 0.2);
+            color: var(--accent-color);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin: 20px 0 10px 0;
+            font-weight: 800;
+        }
+
+        h1 span {
+            color: var(--accent-color);
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            background-color: #0f1316;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 6px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--accent-color);
+            color: #12161a;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background-color: #bccfb4;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="badge">Em Breve</span>
+        <h1>Airsoft<span>Hub</span></h1>
+        <p class="subtitle">A plataforma definitiva para organizar partidas, gerenciar times, finanças do churrasco e encontrar os melhores campos táticos.</p>
+
+        <div class="card">
+            <h3>Entre na Lista de Espera</h3>
+            <!-- Você pode integrar o action com um serviço gratuito como Formspree, Formbold ou sua própria API futuramente -->
+            <form action="https://formspree.io/f/seu_id_aqui" method="POST">
+                <div class="form-group">
+                    <label for="name">Nome / Nome de Guerra</label>
+                    <input type="text" id="name" name="name" placeholder="Ex: Sargento Rocha" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail de Contato</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="profile">Você é:</label>
+                    <select id="profile" name="profile">
+                        <option value="jogador">Jogador de Airsoft</option>
+                        <option value="ranger">Dono de Campo / Ranger</option>
+                        <option value="organizador">Organizador de Equipe/Grupo</option>
+                    </select>
+                </div>
+
+                <button type="submit">Garantir Acesso Antecipado</button>
+            </form>
+        </div>
+
+        <footer>
+            &copy; 2026 AirsoftHub. Dúvidas? Entre em contato: contato@airsofthub.app
+        </footer>
+    </div>
+
+</body>
+</html>
